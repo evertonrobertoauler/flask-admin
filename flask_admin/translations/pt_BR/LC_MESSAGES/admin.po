@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Flask-Admin VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2014-05-29 14:15-0300\n"
-"PO-Revision-Date: 2014-06-06 15:23-0300\n"
+"PO-Revision-Date: 2014-06-20 15:17-0300\n"
 "Last-Translator: Éverton R. Auler <evertonrobertoauler@gmail.com>\n"
 "Language-Team:  <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
@@ -219,7 +219,7 @@ msgstr "menor que"
 #: ../flask_admin/contrib/mongoengine/view.py:478
 #, python-format
 msgid "Failed to get model. %(error)s"
-msgstr "Falha ao obter model. %(error)s"
+msgstr "Falha ao obter registro. %(error)s"
 
 #: ../flask_admin/contrib/mongoengine/view.py:499
 #: ../flask_admin/contrib/peewee/view.py:355
@@ -227,7 +227,7 @@ msgstr "Falha ao obter model. %(error)s"
 #: ../flask_admin/contrib/sqla/view.py:805
 #, python-format
 msgid "Failed to create model. %(error)s"
-msgstr "Falha ao criar model. %(error)s"
+msgstr "Falha ao criar registro. %(error)s"
 
 #: ../flask_admin/contrib/mongoengine/view.py:526
 #: ../flask_admin/contrib/peewee/view.py:375
@@ -235,7 +235,7 @@ msgstr "Falha ao criar model. %(error)s"
 #: ../flask_admin/contrib/sqla/view.py:831
 #, python-format
 msgid "Failed to update model. %(error)s"
-msgstr "Falha ao atualizar model. %(error)s"
+msgstr "Falha ao atualizar registro. %(error)s"
 
 #: ../flask_admin/contrib/mongoengine/view.py:551
 #: ../flask_admin/contrib/peewee/view.py:392
@@ -243,14 +243,14 @@ msgstr "Falha ao atualizar model. %(error)s"
 #: ../flask_admin/contrib/sqla/view.py:858
 #, python-format
 msgid "Failed to delete model. %(error)s"
-msgstr "Falha ao excluir model. %(error)s"
+msgstr "Falha ao excluir registro. %(error)s"
 
 #: ../flask_admin/contrib/mongoengine/view.py:588
 #: ../flask_admin/contrib/peewee/view.py:406
 #: ../flask_admin/contrib/pymongo/view.py:330
 #: ../flask_admin/contrib/sqla/view.py:873
 msgid "Are you sure you want to delete selected models?"
-msgstr "Você tem certeza que deseja excluir os models selecionados?"
+msgstr "Você tem certeza que deseja excluir os registros selecionados?"
 
 #: ../flask_admin/contrib/mongoengine/view.py:597
 #: ../flask_admin/contrib/peewee/view.py:422
@@ -259,8 +259,8 @@ msgstr "Você tem certeza que deseja excluir os models selecionados?"
 #, python-format
 msgid "Model was successfully deleted."
 msgid_plural "%(count)s models were successfully deleted."
-msgstr[0] "Model foi excluído com sucesso."
-msgstr[1] "%(count)s models foram excluídos com sucesso."
+msgstr[0] "Registro foi excluído com sucesso."
+msgstr[1] "%(count)s registros foram excluídos com sucesso."
 
 #: ../flask_admin/contrib/mongoengine/view.py:605
 #: ../flask_admin/contrib/peewee/view.py:430
@@ -268,7 +268,7 @@ msgstr[1] "%(count)s models foram excluídos com sucesso."
 #: ../flask_admin/contrib/sqla/view.py:898
 #, python-format
 msgid "Failed to delete models. %(error)s"
-msgstr "Falha ao excluir models. %(error)s"
+msgstr "Falha ao excluir registros. %(error)s"
 
 #: ../flask_admin/contrib/sqla/fields.py:123
 #: ../flask_admin/contrib/sqla/fields.py:173
@@ -299,11 +299,11 @@ msgstr "Não existem itens na tabela."
 
 #: ../flask_admin/model/base.py:1232
 msgid "Model was successfully created."
-msgstr "Model criado com sucesso."
+msgstr "Registro criado com sucesso."
 
 #: ../flask_admin/model/base.py:1269
 msgid "Model was successfully saved."
-msgstr "Model salvo com sucesso."
+msgstr "Registro salvo com sucesso."
 
 #: ../flask_admin/model/filters.py:91
 msgid "Yes"
@@ -432,4 +432,4 @@ msgstr "Você tem certeza que deseja excluir este item?"
 
 #: ../flask_admin/templates/admin/model/list.html:152
 msgid "Please select at least one model."
-msgstr "Por favor, selecione pelo menos um model."
+msgstr "Por favor, selecione pelo menos um registro."
