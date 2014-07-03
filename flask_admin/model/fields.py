@@ -52,13 +52,13 @@ class InlineFieldList(FieldList):
         """
         self.errors = []
 
+        chain = itertools.chain(self.validators, extra_validators)
+        self._run_validation_chain(form, chain)
+
         # Run validators on all entries within
         for subfield in self.entries:
             if not self.should_delete(subfield) and not subfield.validate(form):
                 self.errors.append(subfield.errors)
-
-        chain = itertools.chain(self.validators, extra_validators)
-        self._run_validation_chain(form, chain)
 
         return len(self.errors) == 0
 
