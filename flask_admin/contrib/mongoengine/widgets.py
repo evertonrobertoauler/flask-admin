@@ -13,7 +13,7 @@ class MongoFileInput(object):
         Renders a file input chooser field.
     """
     template = ('<div>'
-                ' <i class="icon-file"></i>%(name)s %(size)dk (%(content_type)s)'
+                ' <i class="glyphicon glyphicon-file"></i>%(name)s %(size)dk (%(content_type)s)'
                 ' <input type="checkbox" name="%(marker)s">Delete</input>'
                 '</div>')
 

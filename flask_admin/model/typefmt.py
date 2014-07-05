@@ -29,7 +29,7 @@ def bool_formatter(view, value):
         :param value:
             Value to check
     """
-    return Markup('<i class="icon-%s"></i>' % (value and 'ok' or 'remove'))
+    return Markup('<i class="glyphicon glyphicon-%s"></i>' % (value and 'ok' or 'remove'))
 
 
 def list_formatter(view, values):

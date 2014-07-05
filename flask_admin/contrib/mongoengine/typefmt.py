@@ -17,7 +17,7 @@ def grid_formatter(view, value):
 
     return Markup(
         ('<a href="%(url)s" target="_blank">' +
-            '<i class="icon-file"></i>%(name)s' +
+            '<i class="glyphicon glyphicon-file"></i>%(name)s' +
          '</a> %(size)dk (%(content_type)s)') %
         {
             'url': url_for('.api_file_view', **args),
