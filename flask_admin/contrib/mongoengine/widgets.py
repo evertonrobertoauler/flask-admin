@@ -41,10 +41,12 @@ class MongoImageInput(object):
     """
         Renders a file input chooser field.
     """
-    template = ('<div class="image-thumbnail">'
+    template = ('<li class="image-thumbnail">'
                 ' <img src="%(thumb)s"/>'
-                ' <input type="checkbox" name="%(marker)s">Delete</input>'
-                '</div>')
+                '</li>'
+                '<li>'
+                ' <input type="checkbox" name="%(marker)s">Apagar Imagem</input>'
+                '</li>')
 
     def __call__(self, field, **kwargs):
         kwargs.setdefault('id', field.id)
@@ -57,7 +59,7 @@ class MongoImageInput(object):
                 'marker': '_%s-delete' % field.name
             }
 
-        return HTMLString('%s<input %s>' % (placeholder,
+        return HTMLString('<ul class="list-inline form-inline">%s<li><input %s></li></ul>' % (placeholder,
                                             html_params(name=field.name,
                                                         type='file',
                                                         **kwargs)))
